@@ -3,26 +3,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const surpriseMessage = document.getElementById("surpriseMessage");
 
     btnSurprise.addEventListener("click", () => {
-        // 1. Tampilkan pesan tersembunyi
+        // Tampilkan pesan tersembunyi
         surpriseMessage.style.display = "block";
         
         // Ubah teks tombol setelah diklik
         btnSurprise.innerHTML = "Lagi! 🎈🎉";
 
-        // 2. Efek Konfeti Meriah
+        // Panggil Efek Konfeti
         launchConfetti();
     });
 });
 
 function launchConfetti() {
-    // Letupan pertama di tengah
+    // Letupan di tengah
     confetti({
         particleCount: 100,
         spread: 70,
         origin: { y: 0.6 }
     });
 
-    // Pesta konfeti beruntun dari kiri dan kanan
+    // Pesta konfeti dari kiri dan kanan
     const duration = 2.5 * 1000;
     const end = Date.now() + duration;
 
@@ -31,7 +31,6 @@ function launchConfetti() {
             return clearInterval(interval);
         }
 
-        // Tembakan dari sisi kiri
         confetti({
             startVelocity: 30,
             spread: 360,
@@ -40,7 +39,6 @@ function launchConfetti() {
             colors: ['#ff4757', '#ffa502', '#2ed573', '#1e90ff', '#ed4245']
         });
 
-        // Tembakan dari sisi kanan
         confetti({
             startVelocity: 30,
             spread: 360,
