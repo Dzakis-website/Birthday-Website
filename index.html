@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selamat Ulang Tahun, Papa! 🥳</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
 
-    <!-- Header & Hero Section -->
     <header class="hero-section">
         <div class="badge">🎉 Special Day for Papa 🎉</div>
         <h1 class="main-title">Selamat Ulang Tahun, <span class="highlight">Papa!</span></h1>
         <p class="subtitle">Semoga hari ini penuh senyum, tawa, dan kebahagiaan!</p>
     </header>
 
-    <!-- Kartu Ucapan & Doa -->
     <main class="content-container">
         
         <section class="card wish-card">
             <h2>✨ Doa Terbaik untuk Papa ✨</h2>
             <p>
-                Selamat ulang tahun ya, Pa! Terima kasih sudah selalu jadi sosok hero yang luar biasa, selalu sabar, dan selalu mendukung kita semua. 
+                Selamat ulang tahun ya, Pa! Terima kasih sudah selalu jadi sosok hero yang luar biasa, selalu sabar, dan selalu mendukung kita semua.
             </p>
             <p>
                 Di usia yang baru ini, semoga Papa selalu diberikan kesehatan yang berlimpah, umur yang berkah, rezeki yang lancar, dan kebahagiaan yang tak pernah putus. Tetap jadi Papa yang keren dan ceria! ❤️
             </p>
         </section>
 
-        <!-- Area Interaktif (Tombol Kejutan) -->
         <section class="card interactive-card">
             <h3>🎁 Ada Kejutan Kecil Buat Papa!</h3>
             <p>Coba tekan tombol di bawah ini:</p>
@@ -36,7 +37,6 @@
                 Buka Kejutan 🎈
             </button>
 
-            <!-- Pesan Tersembunyi yang muncul setelah tombol diklik -->
             <div id="surpriseMessage" class="hidden-message">
                 <p>🥳 <strong>SURPRISE!</strong> 🥳</p>
                 <p>Terima kasih sudah jadi Papa terbaik di dunia! We love you so much, Pa! 🎂✨</p>
@@ -45,14 +45,10 @@
 
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>Dibuat dengan ❤️ khusus untuk Papa tersayang</p>
     </footer>
-    <!-- Library Konfeti -->
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    
 
+    <script src="script.js"></script>
 </body>
 </html>
-
