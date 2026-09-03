@@ -56,7 +56,7 @@ body {
 /* Container & Cards */
 .content-container {
     width: 100%;
-    max-width: 480px; /* Pas untuk tampilan smartphone */
+    max-width: 480px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -116,7 +116,7 @@ body {
 
 /* Pesan Tersembunyi */
 .hidden-message {
-    display: none; /* Sembunyi secara default */
+    display: none;
     margin-top: 18px;
     padding: 15px;
     background-color: #ffeaa7;
@@ -157,4 +157,3 @@ footer {
         transform: scale(1);
     }
 }
-
